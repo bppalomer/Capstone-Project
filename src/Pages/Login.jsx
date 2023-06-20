@@ -5,6 +5,7 @@ function Login() {
     return (
 
         <>
+<<<<<<< HEAD
             <div className="container mt-5" id="Login">
                 <form className="loginform border shadow rounded p-5">
                     <h1 className="form-title text-center text-white">Log-In</h1>
@@ -12,6 +13,20 @@ function Login() {
                         <label htmlFor="exampleInputEmail1" className="form-label text-white">Email address</label>
                         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
 
+=======
+            <form className="container">
+                <div className="rounded">
+                    <div>
+                        <h1>Log-in</h1>
+                        <div className="col-auto">
+                            <label htmlFor ="input_email" className="visually-hidden">E-mail</label>
+                            <input type="email" className="form-control" id="inputPassword2" placeholder="email"/>
+                        </div>
+                        <div className="col-auto">
+                            <label htmlFor ="inputPassword2" className="visually-hidden">Password</label>
+                            <input type="password" className="form-control" id="inputPassword2" placeholder="Password"/>
+                        </div>
+>>>>>>> main
                     </div>
                     <div className="mb-3 form-input">
                         <label htmlFor="exampleInputPassword1" className="form-label text-white">Password</label>
