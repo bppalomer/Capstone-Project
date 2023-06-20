@@ -61,7 +61,6 @@ function Footer() {
         <div class="text-center mt-2">
             <p>© Copyright 2023 Curve. All Right Reserve</p>
         </div>
-
     </footer>
         </>
     )
