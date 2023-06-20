@@ -34,6 +34,10 @@ body {
 
 
 /* Navbar Section */
+.logo {
+  height: 50px;
+  width: 100%;
+}
 
 .navbar {
   background-color: #0F002E;
@@ -91,3 +95,13 @@ button:hover {
   margin-left: auto;
 }
 
+footer {
+  background-image: url("/public/footer-bg.jpg");
+  background-position: center;
+  background-clip: border-box;
+}
+
+.logo-footer {
+  width: auto;
+  height: 50px;
+}

@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="container-fluid ms-4 me-4">
           <div className="navbar-left">
 
-            <Link className="navbar-brand" to="/">Curve</Link>
+            <Link className="navbar-brand" to="/"><img className="logo" src="/curve-logo.png" alt="logo" /></Link>
             
           </div>
           <div className="navbar-center">
