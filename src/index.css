@@ -14,6 +14,25 @@ body {
 }
 
 
+/* footer */
+@media screen {
+  .btn {
+    margin: 15px;
+    font-size: 11px;
+  }
+}
+
+.icon i {
+  margin-right: 30px;
+  font-size: 30px;
+}
+
+.support a {
+  text-decoration: none;
+  color: black;
+}
+=======
+
 /* Navbar Section */
 
 .navbar {
@@ -71,3 +90,4 @@ button:hover {
 .navbar-right {
   margin-left: auto;
 }
+
