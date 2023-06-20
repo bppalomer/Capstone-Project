@@ -12,3 +12,62 @@ body {
   background-repeat: repeat;
   overflow-x: hidden;
 }
+
+
+/* Navbar Section */
+
+.navbar {
+  background-color: #0F002E;
+}
+
+a, button, .nav-item {
+  color: white!important;
+  font-weight: 600;
+}
+
+button {
+  background: #FA00FF;
+  background-image: -webkit-linear-gradient(top, #FA00FF, #00FFFF);
+  background-image: -moz-linear-gradient(top, #FA00FF, #00FFFF);
+  background-image: -ms-linear-gradient(top, #FA00FF, #00FFFF);
+  background-image: -o-linear-gradient(top, #FA00FF, #00FFFF);
+  background-image: linear-gradient(to bottom, #FA00FF, #00FFFF);
+}
+
+button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  margin-right: auto;
+}
+
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.navbar-right {
+  margin-left: auto;
+}

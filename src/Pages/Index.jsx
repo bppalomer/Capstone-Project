@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from './Layout'
 import Home from './Home'
 import About from './About'
+import Apply from './Apply'
+import ContactUs from './ContactUs'
 import NotFound from './NotFound'
 
 
@@ -12,7 +14,9 @@ function Index() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
-                    <Route path="/aboutus" element={<About />} />
+                    <Route path="/About" element={<About />} />
+                    <Route path="/Apply" element={<Apply />} />
+                    <Route path="/ContactUs" element={<ContactUs />} />
                     <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
