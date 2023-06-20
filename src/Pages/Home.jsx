@@ -1,12 +1,14 @@
 /* eslint-disable no-unused-vars */
-import { useNavigate } from 'react-router-dom';
+
 
 function Home() {
 
-    const navigate = useNavigate();
+    
 
     return (
         <>
+        <h1>This is the Home page</h1>
+
         
         </>
     )
