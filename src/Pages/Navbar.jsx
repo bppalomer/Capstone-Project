@@ -13,7 +13,7 @@ const Navbar = () => {
             
           </div>
           <button
-            className="navbar-toggler bg-light"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
