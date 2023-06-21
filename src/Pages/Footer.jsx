@@ -1,11 +1,11 @@
 function Footer() {
   return (
     <>
-      <footer className="container-fluid mx-auto mt-5 pt-5">
+      <footer className="container-fluid mx-auto mt-5 p-5 text-white">
         <div className="row">
           <div className="col-md-4">
-            <h1 className="text ms-5">Curve</h1>
-            <p className="text mt-2 ms-3">
+            <h1 className="text-start"><img className="logo-footer" src="/curve-logo.png" alt="logo" /></h1>
+            <p className="mt-2">
               Join our vibrant community today and unlock a world of opportunities as we reshape the future of gaming talent recruitment.
               Get ready to level up your gaming career with Curve!
             </p>
@@ -75,8 +75,8 @@ function Footer() {
                 </div>
               </div>
 
-              <div className="text text-center mt-2">
-                <p>© Copyright 2023 Curve. All Right Reserve</p>
+              <div className="container text-center align-bottom mt-2">
+                <p>© Copyright 2023 Curve. All Rights Reserved</p>
               </div>
         </footer>
     </>

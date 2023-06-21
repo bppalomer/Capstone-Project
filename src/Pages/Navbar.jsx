@@ -24,20 +24,20 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
             
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="navbar-center">
             <ul className="navbar-nav">
               <li className="nav-item">
-              <Link to="/" className={`nav-link ${(find.pathname === `/`) ? `fw-bold active` : ``}`}>Home</Link>
+              <Link to="/" className={`nav-link ${(find.pathname === `/`) ? `fw-bold active` : ``}`}>HOME</Link>
               </li>
               <li className="nav-item">
-              <Link to="/About" className={`nav-link ${(find.pathname === `/About`) ? `fw-bold active` : ``}`}>About</Link>
+              <Link to="/About" className={`nav-link ${(find.pathname === `/About`) ? `fw-bold active` : ``}`}>ABOUT</Link>
               </li>
               <li className="nav-item dropdown">
-              <Link to="/Apply" className={`nav-link ${(find.pathname === `/Apply`) ? `fw-bold active` : ``}`}>Apply</Link>
+              <Link to="/Apply" className={`nav-link ${(find.pathname === `/Apply`) ? `fw-bold active` : ``}`}>APPLY</Link>
               </li>
               <li className="nav-item">
-              <Link to="/ContactUs" className={`nav-link ${(find.pathname === `/ContactUs`) ? `fw-bold active` : ``}`}>ContactUs</Link>
+              <Link to="/ContactUs" className={`nav-link ${(find.pathname === `/ContactUs`) ? `fw-bold active` : ``}`}>CONTACT US</Link>
               </li>
             </ul>
           </div>

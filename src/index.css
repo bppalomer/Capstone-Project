@@ -153,6 +153,8 @@ button:hover {
 
 footer {
   background-image: url("/public/footer-bg.jpg");
+  width: auto;
+  height: 50vh;
   background-position: center;
   background-clip: border-box;
 }
