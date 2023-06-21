@@ -1,6 +1,15 @@
 function Footer() {
   return (
     <>
+
+      <footer className="container-fluid mx-auto mt-5 pt-5">
+        <div className="row">
+          <div className="col-md-4">
+            <h1 className="text ms-5">Curve</h1>
+            <p className="text mt-2 ms-3">
+            Join our vibrant community today and unlock a world of opportunities as we reshape the future of gaming talent recruitment. 
+            Get ready to level up your gaming career with Curve!
+
       <footer className="container-fluid mx-auto text-white p-5">
         <div className="row">
           <div className="col-md-4">
@@ -10,6 +19,7 @@ function Footer() {
               dolorum placeat doloribus obcaecati ex earum numquam incidunt
               enim, neque, delectus perferendis! Labore eum, inventore nostrum
               ipsam corrupti repudiandae dignissimos minus!
+
             </p>
             <div className="icon ms-4 p-2">
               <i className="fa-brands fa-twitter"></i>
@@ -21,7 +31,11 @@ function Footer() {
 
           <div className="col-md-1">
             <div className="support ms-2">
+
+              <h3 className="text">Support</h3>
+
               <h2 className="fw-bold">Support</h2>
+
               <p>
                 <a href="">
                   <small>How to Hire</small>
@@ -44,9 +58,15 @@ function Footer() {
               </p>
             </div>
           </div>
+
+          <div className="col-md-3">
+            <div className="text ms-4">
+              <h3>Contact Us</h3>
+
           <div className="col-md-2">
             <div className="ms-4">
               <h2 className="fw-bold">Contact Us</h2>
+
               <strong>Location</strong>
               <p>Manila, Philippines</p>
 
@@ -57,9 +77,15 @@ function Footer() {
               <p>support@curve.com</p>
             </div>
           </div>
+
+          <div className="text col-md-3">
+            <div>
+              <h3>Newsletter Sign up</h3>
+
           <div className="col-md-4">
             <div>
               <h2 className="fw-bold">Newsletter Signup</h2>
+
               <input
                 type="text"
                 placeholder="Your Email Address"
@@ -75,7 +101,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="text-center mt-2">
+        <div className="text text-center mt-2">
           <p>© Copyright 2023 Curve. All Right Reserve</p>
         </div>
       </footer>

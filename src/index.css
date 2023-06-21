@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #1B0052;
+  background-color: #1B0052 !important;
   background-position: center;
   background-repeat: repeat;
   overflow-x: hidden;
@@ -15,6 +15,13 @@ body {
 
 
 /* footer */
+
+
+
+footer{
+  background-color: #0c0d0eaf;
+}
+
 @media screen {
   .btn {
     margin: 15px;
@@ -29,8 +36,15 @@ body {
 
 .support a {
   text-decoration: none;
-  color: black;
 }
+
+.text{
+  color:white;
+}
+
+
+
+
 
 
 /* Navbar Section */
@@ -95,6 +109,47 @@ button:hover {
   margin-left: auto;
 }
 
+
+
+/* Login section */
+
+.loginform {
+  width: 600px;
+  margin-top: 100px;
+  margin-left: 18vw;
+  background-color: rgb(38, 20, 92);
+}
+
+
+.form-input{
+  max-width: 600px;
+}
+
+@media (max-width: 689px) {
+  .loginform{
+    margin: 0%;
+  }
+}
+
+@media (max-width: 470px) {
+  #Login{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+
+  } 
+
+  .loginform{
+    margin-left: 0px;
+  }
+
+  .form-title{
+    font-size: 20px;
+  }
+
 footer {
   background-image: url("/public/footer-bg.jpg");
   background-position: center;
@@ -104,4 +159,5 @@ footer {
 .logo-footer {
   width: auto;
   height: 50px;
+
 }
