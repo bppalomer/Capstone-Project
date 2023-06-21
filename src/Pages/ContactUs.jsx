@@ -1,9 +1,12 @@
 
 function ContactUs () {
-
-    <>
-    <h1>This is a contact us page</h1>
-    </>
+    return (
+        <>
+        <h1>This is a contact us page</h1>
+        </>
+    )
 }
 
-return ContactUs;
+
+
+export default ContactUs;
