@@ -13,7 +13,7 @@ function Index() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Layout />} />
+                <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
                     <Route path="/Login" element={<Login/>} />
                     <Route path="/About" element={<About />} />
