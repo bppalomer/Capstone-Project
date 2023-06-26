@@ -29,7 +29,7 @@ function Gamerform() {
                         <input type="confirm-password" className="form-control" id="inputPassword" />
                     </div>
                     <div className="col-12">
-                        <label for="inputPassword" className="form-label">Confirm Password</label>
+                        <label for="inputPassword" className="form-label">Address</label>
                         <input type="confirm-password" className="form-control" id="inputPassword" />
                     </div>
                     <div className="col-md-6">
