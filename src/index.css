@@ -164,3 +164,24 @@ footer {
   height: 50px;
 
 }
+
+/* gamerform */
+
+#gamerform{
+  width: 800px;
+  margin-left: 9vw;
+  background-color: #0f002e56;
+}
+
+
+@media (max-width:600px) {
+  
+  #gamerform{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 0vw;
+    margin-left: 0vw;
+  }
+}
+

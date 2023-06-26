@@ -5,6 +5,7 @@ import About from './About'
 import Login from './Login'
 import Apply from './Apply'
 import ContactUs from './ContactUs'
+import Gamerform from './Gamerform'
 import NotFound from './NotFound'
 
 
@@ -19,6 +20,7 @@ function Index() {
                     <Route path="/About" element={<About />} />
                     <Route path="/Apply" element={<Apply />} />
                     <Route path="/ContactUs" element={<ContactUs />} />
+                    <Route path="/Gamerform" element={<Gamerform />} />
                     <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
