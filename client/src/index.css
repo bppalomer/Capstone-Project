@@ -132,3 +132,14 @@ button:hover {
   border-radius: 10%;
   
 }
+
+/* Admin Page */
+
+.left-navbar {
+  height: 100vh;
+}
+
+#admin_img {
+  width: 250px;
+  height: 100px;
+}
