@@ -14,7 +14,6 @@ function Player(){
             </div>
         </form>
     </div>
-
     <div className="container">
         <form className="mt-5 pb-3 border rounded shadow">
             <p className="fw-bold mt-2 text-center"> Looking For Main-Support</p>
@@ -26,7 +25,6 @@ function Player(){
             </div>
         </form>
     </div>
-
     <div className="container">
         <form className="mt-5 pb-3 border rounded shadow">
             <p className="fw-bold mt-2 text-center"> Looking For Semi-Support</p>
@@ -38,7 +36,6 @@ function Player(){
             </div>
         </form>
     </div>
-
     <div className="container">
         <form className="mt-5 pb-3 border rounded shadow">
             <p className="fw-bold mt-2 text-center"> Looking For Carry</p>
@@ -50,7 +47,6 @@ function Player(){
             </div>
         </form>
     </div>
-
     <div className="container">
         <form className="mt-5 pb-3 border rounded shadow">
             <p className="fw-bold mt-2 text-center"> Looking For Mid Core</p>
@@ -62,7 +58,6 @@ function Player(){
             </div>
         </form>
     </div>
-
     <div className="container">
         <form className="mt-5 pb-3 border rounded shadow">
             <p className="fw-bold mt-2 text-center"> Looking For EXP Laner</p>
@@ -74,7 +69,6 @@ function Player(){
             </div>
         </form>
     </div>
-
     <div className="container">
         <form className="mt-5 pb-3 border rounded shadow">
             <p className="fw-bold mt-2 text-center"> Looking For EXP Laner</p>
