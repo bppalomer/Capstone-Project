@@ -5,8 +5,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid ms-4 me-4">
+      <nav className="navbar navbar-expand-lg sticky-top shadow-lg p-4">
+        <div className="container text-center">
           <div className="navbar-left">
 
             <Link className="navbar-brand" to="/"><img className="logo" src="/curve-logo.png" alt="logo" /></Link>

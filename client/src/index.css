@@ -18,7 +18,7 @@ body {
 
 
 
-footer{
+footer {
   background-color: #0c0d0eaf;
 }
 
@@ -38,15 +38,15 @@ footer{
   text-decoration: none;
 }
 
-.text{
-  color:white;
+.text {
+  color: white;
 }
 
 footer {
   background: url("footer-bg.jpg");
   width: auto;
   height: 50vh;
-  background-position: center;
+  background-position: center center;
   background-clip: border-box;
 }
 
@@ -55,6 +55,59 @@ footer {
   height: 50px;
 
 }
+
+
+/* Home page */
+
+#hero-section {
+  background-image: url("/hero-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0c0d0eaf;
+  overflow: hidden;
+  width: auto;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+#wrapper {
+  float: left;
+  width: 800px;
+}
+
+#divider {
+  background-image: url("/divider.png");
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  right: 0;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+#intro-section {
+  background-image: url("/esports-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0c0d0eaf;
+  overflow: hidden;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+
 
 
 
@@ -69,27 +122,29 @@ footer {
   background-color: #0F002E;
 }
 
-a, button, .nav-item {
-  color: white!important;
+a,
+button,
+.nav-item {
+  color: white !important;
   font-weight: 600;
 }
 
 button {
-  background: #FA00FF;
-  background-image: -webkit-linear-gradient(top, #FA00FF, #00FFFF);
-  background-image: -moz-linear-gradient(top, #FA00FF, #00FFFF);
-  background-image: -ms-linear-gradient(top, #FA00FF, #00FFFF);
-  background-image: -o-linear-gradient(top, #FA00FF, #00FFFF);
-  background-image: linear-gradient(to bottom, #FA00FF, #00FFFF);
+  background: #E4504E;
+  background-image: -webkit-linear-gradient(top, #E4504E, #7C196C);
+  background-image: -moz-linear-gradient(top, #E4504E, #7C196C);
+  background-image: -ms-linear-gradient(top, #E4504E, #7C196C);
+  background-image: -o-linear-gradient(top, #E4504E, #7C196C);
+  background-image: linear-gradient(to bottom, #E4504E, #7C196C);
 }
 
 button:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  background: #E4504E;
+  background-image: -webkit-linear-gradient(top, #E4504E, #E4504E);
+  background-image: -moz-linear-gradient(top, #E4504E, #E4504E);
+  background-image: -ms-linear-gradient(top, #E4504E, #E4504E);
+  background-image: -o-linear-gradient(top, #E4504E, #E4504E);
+  background-image: linear-gradient(to bottom, #E4504E, #E4504E);
   text-decoration: none;
 }
 
@@ -130,7 +185,7 @@ button:hover {
   border-color: aliceblue !important;
   border: solid;
   border-radius: 10%;
-  
+
 }
 
 /* Admin Page */
