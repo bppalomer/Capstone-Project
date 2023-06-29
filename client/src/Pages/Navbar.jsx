@@ -43,6 +43,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-right justify-content-center d-flex">
             <button
+
               className="navbar-btn ps-4 pe-4 pt-2 pb-2 me-3"
               type="submit"
             >
