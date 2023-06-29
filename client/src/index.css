@@ -133,80 +133,24 @@ button:hover {
   
 }
 
+/* About Section */
 
-
-/* gamerform */
-
-#gamerform{
-  width: 800px;
-  margin-left: 9vw;
-  background-color: #0f002e56;
+.about_btn {
+  padding: 2vw 5vw 2vw 5vw;
+  width: 40vh;
 }
 
-
-@media (max-width:600px) {
-  
-  #gamerform{
-    display: flex;
-    flex-wrap: wrap;
-    width: 400px;
-    margin: 0vw;
-    margin-left: 0vw;
-  }
+.about_img_card {
+  width: 300px !important;
 }
 
-
-/* apply form */
-
-.card{
-  text-align: center;
-  width: 15rem;
+.about_card {
+  width: 350px !important;
+  background-color: #0F002E !important;
+  color: white !important;
 }
 
-.apply-btn{
-  text-decoration: none;
-}
-
-#apply{
-  width: 40rem;
-  margin-top: 15rem;
-  margin-bottom: 18rem;
-}
-
-@media (max-width: 600px) {
-  .card{
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-/* Admin Page */
-
-.left-navbar {
-  height: 100vh;
-}
-
-#admin_img {
-  width: 250px;
-  height: 100px;
-}
-
-
-
-/* Recruiter */
-
-.recruiter{
-  color: white;
-  margin-bottom: 5vw;
-}
-
-#inpt{
-  width: 50vw;
-  height: 50px;
-}
-
-#job{
-  width: 50vw;
-  height: 5vw
+.about_logo {
+  color: rgb(255, 255, 255) !important;
 }
 
