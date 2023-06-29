@@ -43,7 +43,7 @@ footer{
 }
 
 footer {
-  background: url("/public/footer-bg.jpg");
+  background: url("footer-bg.jpg");
   width: auto;
   height: 50vh;
   background-position: center;
@@ -133,6 +133,7 @@ button:hover {
   
 }
 
+<<<<<<< HEAD
 
 /* gamerform */
 
@@ -178,3 +179,15 @@ button:hover {
     flex-wrap: wrap;
   }
 }
+=======
+/* Admin Page */
+
+.left-navbar {
+  height: 100vh;
+}
+
+#admin_img {
+  width: 250px;
+  height: 100px;
+}
+>>>>>>> main
