@@ -133,7 +133,7 @@ button:hover {
   
 }
 
-<<<<<<< HEAD
+
 
 /* gamerform */
 
@@ -179,7 +179,7 @@ button:hover {
     flex-wrap: wrap;
   }
 }
-=======
+
 /* Admin Page */
 
 .left-navbar {
@@ -190,4 +190,23 @@ button:hover {
   width: 250px;
   height: 100px;
 }
->>>>>>> main
+
+
+
+/* Recruiter */
+
+.recruiter{
+  color: white;
+  margin-bottom: 5vw;
+}
+
+#inpt{
+  width: 50vw;
+  height: 50px;
+}
+
+#job{
+  width: 50vw;
+  height: 5vw
+}
+
