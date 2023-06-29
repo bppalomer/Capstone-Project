@@ -43,7 +43,7 @@ footer{
 }
 
 footer {
-  background: url("/public/footer-bg.jpg");
+  background: url("footer-bg.jpg");
   width: auto;
   height: 50vh;
   background-position: center;
