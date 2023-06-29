@@ -1,96 +1,117 @@
-import { useState } from "react";
-
 const About = () => {
-  const [selectedButton, setSelectedButton] = useState(null);
-
-  const buttonData = {
-    developer: <div className="d-flex">
-<div className="card about_card justify-content-center d-flex align-items-center m-4">
-  <img className="card-img-top about_img_card m-2" src="/bryan.png" alt="Card image cap" />
-  <div className="card-body text-center">
-    <h5 className="card-title fw-bold">Bryan Paul Palomer</h5>
-    <p className="card-text fw-bold">Back-End Developer</p>
-    <a class="text-dark" href=""><i class="fa-brands fa-github m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-linkedin m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-facebook m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-instagram m-3"></i></a>
-  </div>
-</div>
-<div className="card about_card justify-content-center d-flex align-items-center m-4">
-  <img className="card-img-top about_img_card m-2" src="/bryan.png" alt="Card image cap" />
-  <div className="card-body text-center">
-    <h5 className="card-title fw-bold">Bryan Paul Palomer</h5>
-    <p className="card-text fw-bold">Back-End Developer</p>
-    <a class="text-dark" href=""><i class="fa-brands fa-github m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-linkedin m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-facebook m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-instagram m-3"></i></a>
-  </div>
-</div>
-<div className="card about_card justify-content-center d-flex align-items-center m-4">
-  <img className="card-img-top about_img_card m-2" src="/bryan.png" alt="Card image cap" />
-  <div className="card-body text-center">
-    <h5 className="card-title fw-bold">Bryan Paul Palomer</h5>
-    <p className="card-text fw-bold">Back-End Developer</p>
-    <a class="text-dark" href=""><i class="fa-brands fa-github m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-linkedin m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-facebook m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-instagram m-3"></i></a>
-  </div>
-</div>
-<div className="card about_card justify-content-center d-flex align-items-center m-4">
-  <img className="card-img-top about_img_card m-2" src="/bryan.png" alt="Card image cap" />
-  <div className="card-body text-center">
-    <h5 className="card-title fw-bold">Bryan Paul Palomer</h5>
-    <p className="card-text fw-bold">Back-End Developer</p>
-    <a class="text-dark" href=""><i class="fa-brands fa-github m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-linkedin m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-facebook m-3"></i></a>
-    <a class="text-dark" href=""><i class="fa-brands fa-instagram m-3"></i></a>
-  </div>
-</div>
-
-
-
-    </div>,
-    faqs: <div>This is button 2</div>,
-    privacy_policy: <div>This is button 3</div>,
-  };
-
-  const handleButtonClick = (buttonName) => {
-    setSelectedButton(buttonName);
-  };
-
   return (
     <>
-      <div className="container d-flex justify-content-center m-5 mx-auto">
-        <div>
-          <button
-            onClick={() => handleButtonClick("developer")}
-            className="rounded m-2 about_btn"
-          >
-            Developers
-          </button>
+      <div className="text-light text-center m-5">
+        <h1>Meet the Developers</h1>
+      </div>
+
+      <div className="row justify-content-center mt-5 ">
+        <div className="card col-md-3 about_card justify-content-center d-flex align-items-center m-1 shadow-lg">
+          <img
+            className="card-img-top about_img_card m-2 border-light rounded-circle"
+            src="/bryan.png"
+            alt="Card image cap"
+          />
+          <div className="card-body text-center">
+            <h5 className="card-title fw-bold">Bryan Paul Palomer</h5>
+            <p className="card-text fw-bold">Back-End Developer</p>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-github m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-linkedin m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-facebook m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-instagram m-3"></i>
+            </a>
+          </div>
         </div>
-        <div>
-          <button onClick={() => handleButtonClick("faqs")} className="rounded m-2 about_btn">
-            FAQ's
-          </button>
+        <div className="card col-md-3 about_card justify-content-center d-flex align-items-center m-1 shadow-lg">
+          <img
+            className="card-img-top about_img_card m-2 border-light rounded-circle"
+            src="/bryan.png"
+            alt="Card image cap"
+          />
+          <div className="card-body text-center">
+            <h5 className="card-title fw-bold">Eliezer Layug</h5>
+            <p className="card-text fw-bold">Front-End Developer</p>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-github m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-linkedin m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-facebook m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-instagram m-3"></i>
+            </a>
+          </div>
         </div>
-        <div>
-          <button
-            onClick={() => handleButtonClick("privacy_policy")}
-            className="rounded m-2 about_btn"
-          >
-            Privacy Policy
-          </button>
+        <div className="card col-md-3 about_card justify-content-center d-flex align-items-center m-1 shadow-lg">
+          <img
+            className="card-img-top about_img_card m-2 border-light rounded-circle"
+            src="/bryan.png"
+            alt="Card image cap"
+          />
+          <div className="card-body text-center">
+            <h5 className="card-title fw-bold">Patrick Laguna</h5>
+            <p className="card-text fw-bold">Front-End Developer</p>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-github m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-linkedin m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-facebook m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-instagram m-3"></i>
+            </a>
+          </div>
+        </div>
+        <div className="card col-md-3 about_card justify-content-center d-flex align-items-center m-1 shadow-lg">
+          <img
+            className="card-img-top about_img_card m-2 border-light rounded-circle"
+            src="/bryan.png"
+            alt="Card image cap"
+          />
+          <div className="card-body text-center">
+            <h5 className="card-title fw-bold">Marjorie Mainit</h5>
+            <p className="card-text fw-bold">Back-End Developer</p>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-github m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-linkedin m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-facebook m-3"></i>
+            </a>
+            <a class="text-dark" href="">
+              <i class="fa-brands about_logo fa-2x fa-instagram m-3"></i>
+            </a>
+          </div>
         </div>
       </div>
-      <div className="justify-content-center mx-auto d-flex">
-        {selectedButton && (
-          <div className="text-light">{buttonData[selectedButton]}</div>
-        )}
+      <div className="m-3 p-5">
+      <div className="text-light m-5 p-5 border border-primary-subtle">
+        <h1>Mission</h1>
+        <p>To empower gamers and recruiters by providing a platform that seamlessly connects them, enabling the creation of highly skilled and successful gaming teams.</p>
       </div>
+      <div className="text-light m-5 p-5 border border-primary-subtle">
+        <h1>Vision</h1>
+        <p>To be the leading platform that revolutionizes the way gamers and recruiters come together, fostering a dynamic and inclusive gaming community that drives excellence and innovation in esports and gaming talent recruitment.
+
+By connecting gamers and recruiters, Curve aims to bridge the gap and facilitate the formation of gaming teams that are not only skilled but also aligned in their goals and aspirations. This mission and vision statement highlights the company's commitment to enabling collaboration, nurturing talent, and driving the growth and advancement of the gaming industry.</p>
+      </div>
+      </div>
+      
     </>
   );
 };
