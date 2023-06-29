@@ -143,3 +143,22 @@ button:hover {
   width: 250px;
   height: 100px;
 }
+
+
+/* Recruiter */
+
+.recruiter{
+  color: white;
+  margin-bottom: 5vw;
+}
+
+#inpt{
+  width: 50vw;
+  height: 50px;
+}
+
+#job{
+  width: 50vw;
+  height: 5vw
+}
+
