@@ -34,9 +34,6 @@ const Navbar = () => {
               <Link to="/About" className={`nav-link ${(find.pathname === `/About`) ? `fw-bold active` : ``}`}>ABOUT</Link>
               </li>
               <li className="nav-item dropdown">
-              <Link to="/Recruiter" className={`nav-link ${(find.pathname === `/Recruiter`) ? `fw-bold active` : ``}`}>RECRUITER</Link>
-              </li>
-              <li className="nav-item dropdown">
               <Link to="/Apply" className={`nav-link ${(find.pathname === `/Apply`) ? `fw-bold active` : ``}`}>APPLY</Link>
               </li>
               <li className="nav-item">
