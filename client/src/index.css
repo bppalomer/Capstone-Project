@@ -132,3 +132,19 @@ button:hover {
   border-radius: 10%;
   
 }
+
+/* About Section */
+
+.about_btn {
+  padding: 2vw 5vw 2vw 5vw;
+  width: 40vh;
+}
+
+.about_img_card {
+  width: 15vw !important;
+}
+
+.about_card {
+  width: 20vw !important;
+  
+}
