@@ -18,7 +18,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-md-1">
+          <div className="col-md-2">
             <div className="support ms-2">
               <h2 className="fw-bold">Support</h2>
               <p>
@@ -57,15 +57,15 @@ function Footer() {
                 <p>support@curve.com</p>
               </div>
             </div>
-                <div className="col-md-4">
+                <div className="col-md-4 ">
                   <div>
                     <h2 className="fw-bold">Newsletter Signup</h2>
                     <input
                       type="text"
                       placeholder="Your Email Address"
-                      className="mt-3"
+                      className="mt-3 form-control"
                     ></input>
-                    <button className="btn btn-primary fw-bold">Subscribe Now</button>
+                    <button className="btn btn-primary fw-bold mt-3 ms-0">Subscribe Now</button>
                     <p className="mt-3">
                       <small>
                         Get the latest update annd offer for business service yearly

@@ -42,7 +42,19 @@ footer{
   color:white;
 }
 
+footer {
+  background: url("/public/footer-bg.jpg");
+  width: auto;
+  height: 50vh;
+  background-position: center;
+  background-clip: border-box;
+}
 
+.logo-footer {
+  width: auto;
+  height: 50px;
+
+}
 
 
 
@@ -113,54 +125,10 @@ button:hover {
 
 /* Login section */
 
-.loginform {
-  width: 600px;
-  margin-top: 100px;
-  margin-left: 18vw;
-  background-color: rgb(38, 20, 92);
-}
-
-
-.form-input{
-  max-width: 600px;
-}
-
-@media (max-width: 689px) {
-  .loginform{
-    margin: 0%;
-  }
-}
-
-@media (max-width: 470px) {
-  #Login{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
-
-  } 
-
-  .loginform{
-    margin-left: 0px;
-  }
-
-  .form-title{
-    font-size: 20px;
-  }
-}
-
-footer {
-  background-image: url("/public/footer-bg.jpg");
-  width: auto;
-  height: 50vh;
-  background-position: center;
-  background-clip: border-box;
-}
-
-.logo-footer {
-  width: auto;
-  height: 50px;
-
+#LogIn_Form {
+  margin: 10vw 15vw 10vw 15vw;
+  border-color: aliceblue !important;
+  border: solid;
+  border-radius: 10%;
+  
 }

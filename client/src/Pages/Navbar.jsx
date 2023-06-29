@@ -42,16 +42,20 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-right justify-content-center d-flex">
+          <Link to="/Login" className={`nav-link ${(find.pathname === `/Login`) ? `fw-bold active` : ``}`}>
             <button
 
-              className="navbar-btn ps-4 pe-4 pt-2 pb-2 me-3"
+              className="navbar-btn ps-4 pe-4 pt-2 pb-2 me-3 rounded"
               type="submit"
             >
               Log-In
             </button>
-            <button className="navbar-btn ps-3 pe-3 pt-2 pb-2" type="submit">
+            </Link>
+            <Link to="/Apply" className={`nav-link ${(find.pathname === `/Apply`) ? `fw-bold active` : ``}`}>
+            <button className="navbar-btn ps-3 pe-3 pt-2 pb-2 rounded" type="submit">
               Register
             </button>
+            </Link>
           </div>
           </div>
         </div>
