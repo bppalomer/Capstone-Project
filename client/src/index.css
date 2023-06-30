@@ -122,8 +122,7 @@ footer {
   background-color: #2a0080;
 }
 
-a,
-button,
+a, button,
 .nav-item {
   color: white !important;
   font-weight: 600;
