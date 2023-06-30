@@ -119,7 +119,7 @@ footer {
 }
 
 .navbar {
-  background-color: #2a0080;
+  background-color: #120036;
 }
 
 a, button,
@@ -187,13 +187,39 @@ button:hover {
 
 }
 
-/* Admin Page */
-
-.left-navbar {
-  height: 100vh;
+/* About Section */
+#hero-pages {
+  background-image: url("/breadcumb-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  padding: 3%;
 }
 
-#admin_img {
-  width: 250px;
-  height: 100px;
+#about-wrapper {
+  text-align: start;
+
 }
+
+.about_btn {
+  padding: 2vw 5vw 2vw 5vw;
+  width: 40vh;
+}
+
+.about_img_card {
+  width: 300px !important;
+}
+
+.about_card {
+  width: 350px !important;
+  background-color: #0F002E !important;
+  color: white !important;
+}
+
+.about_logo {
+  color: rgb(255, 255, 255) !important;
+}
+

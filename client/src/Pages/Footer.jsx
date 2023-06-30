@@ -37,7 +37,7 @@ function Footer() {
                 </a>
               </p>
               <p>
-                <a href="">
+                <a href="#">
                   <small>Privacy Policy</small>
                 </a>
               </p>
