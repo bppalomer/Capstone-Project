@@ -122,7 +122,8 @@ footer {
   background-color: #120036;
 }
 
-a, button,
+a,
+button,
 .nav-item {
   color: white !important;
   font-weight: 600;
@@ -223,3 +224,50 @@ button:hover {
   color: rgb(255, 255, 255) !important;
 }
 
+/* contactus page */
+
+#contactform {
+  width: 50vw;
+}
+
+#input {
+  height: 4vw;
+}
+
+#Message {
+  height: 9vw;
+}
+
+.header-text {
+  font-size: 60px;
+  text-decoration: none;
+}
+
+.contactUs {
+  margin: 50px;
+  margin-left: 100px;
+}
+
+.fab {
+  width: 30px;
+  height: 30px;
+}
+
+.info-box {
+  margin-top: 18vw;
+}
+
+@media (max-width: 800px) {
+  #contactform {
+    width: 40vw;
+  }
+
+  .header-text {
+    font-size: 30px;
+  }
+
+  .contactUs {
+    margin: 0px;
+    margin-left: 0px;
+  }
+}
