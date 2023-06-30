@@ -56,7 +56,7 @@ class AuthController extends Controller
         $user = auth()->user();
 
         $token = $user->createToken('auth_token')->plainTextToken;
-
+        //Linting error
 
 
         return response()->json(['token' => $token]);
