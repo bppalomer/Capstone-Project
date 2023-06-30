@@ -1,6 +1,6 @@
 
 
-function Gamerform() {
+function UserRegisterForm() {
 
 
     return (
@@ -82,4 +82,4 @@ function Gamerform() {
     )
 }
 
-export default Gamerform;
+export default UserRegisterForm;

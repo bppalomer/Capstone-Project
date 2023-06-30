@@ -17,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/userregister', function(){
+    echo "register";
+});
+
+Route::get('/recruiterregister', function(){
+    echo "Register";
+});
+
+Route::get('/login', function(){
+    echo "Register";
+});
