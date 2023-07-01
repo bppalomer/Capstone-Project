@@ -16,7 +16,7 @@ class AuthController extends Controller
         $user->lastname = $request->lastname;
         $user->email = $request->email;
         $user->address = $request->address;
-        $user->state = $request->state;
+        $user->province = $request->province;
         $user->city = $request->city;
         $user->zip = $request->zip;
         $user->birthdate = $request->birthdate;
