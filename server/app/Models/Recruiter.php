@@ -17,10 +17,9 @@ class Recruiter extends Model
      */
     protected $fillable = [
         'teamname',
-        'companyaddress',
+        'address',
         'email',
-        'gamename',
-        'jobdescription',
+        'representativename',
         'password',
     ];
 
