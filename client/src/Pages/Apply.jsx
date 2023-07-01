@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 function Apply() {
   const [firstName, setFirstName] = useState("");
@@ -16,33 +16,33 @@ function Apply() {
   const [gamename, setGamename] = useState("");
   const [bio, setBio] = useState("");
 
-  const handleRegister = async (e) => { 
+  const handleRegister = async (e) => {
     e.preventDefault();
 
-    const response = await fetch ('http://127.0.0.1:8000/api/users', {
-        method: "POST",
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify ({
-            firstName,
-            lastName,
-            email,
-            password,
-            address,
-            city,
-            province,
-            zip,
-            birthdate,
-            sex,
-            gamename,
-            bio
-        })
-    })
+    const response = await fetch("http://127.0.0.1:8000/api/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        email,
+        password,
+        address,
+        city,
+        province,
+        zip,
+        birthdate,
+        sex,
+        gamename,
+        bio,
+      }),
+    });
 
     const data = await response.json();
-    console.log (data);
-}
+    console.log(data);
+  };
   return (
     <>
       <div className="container p-5 mt-5">
@@ -52,7 +52,11 @@ function Apply() {
           onSubmit={handleRegister}
         >
           <div className="col-md-6">
-            <label htmlFor="inputFirstname" className="form-label fw-bold" required>
+            <label
+              htmlFor="inputFirstname"
+              className="form-label fw-bold"
+              required
+            >
               Firstname
             </label>
             <input
@@ -64,7 +68,11 @@ function Apply() {
             />
           </div>
           <div className="col-md-6">
-            <label htmlFor="inputLastname" className="form-label fw-bold" required>
+            <label
+              htmlFor="inputLastname"
+              className="form-label fw-bold"
+              required
+            >
               Lastname
             </label>
             <input
@@ -89,7 +97,11 @@ function Apply() {
             />
           </div>
           <div className="col-12">
-            <label htmlFor="inputPassword" className="form-label fw-bold" required>
+            <label
+              htmlFor="inputPassword"
+              className="form-label fw-bold"
+              required
+            >
               Password
             </label>
             <input
@@ -113,7 +125,11 @@ function Apply() {
             />
           </div>
           <div className="col-12">
-            <label htmlFor="inputAddress" className="form-label fw-bold" required>
+            <label
+              htmlFor="inputAddress"
+              className="form-label fw-bold"
+              required
+            >
               Address
             </label>
             <input
@@ -147,86 +163,85 @@ function Apply() {
               onChange={(e) => setProvince(e.target.value)}
             >
               <option selected>Choose...</option>
-              <option>Abra</option>
-              <option>Agusan del Norte</option>
-              <option>Agusan del Sur</option>
-              <option>Aklan</option>
-              <option>Albay</option>
-              <option>Antique</option>
-              <option>Apayao</option>
-              <option>Aurora</option>
-              <option>Basilan</option>
-              <option>Bataan</option>
-              <option>Batanes</option>
-              <option>Batangas</option>
-              <option>Biliran</option>
-              <option>Benguet</option>
-              <option>Bohol</option>
-              <option>Bukidnon</option>
-              <option>Bulacan</option>
-              <option>Cagayan</option>
-              <option>Camarines Norte</option>
-              <option>Camarines Sur</option>
-              <option>Camiguin</option>
-              <option>Capiz</option>
-              <option>Catanduanes</option>
-              <option>Cavite</option>
-              <option>Cebu</option>
-              <option>Compostela</option>
-              <option>Davao del Norte</option>
-              <option>Davao del Sur</option>
-              <option>Davao Oriental</option>
-              <option>Eastern Samar</option>
-              <option>Guimaras</option>
-              <option>Ifugao</option>
-              <option>Ilocos Norte</option>
-              <option>Ilocos Sur</option>
-              <option>Iloilo</option>
-              <option>Isabela</option>
-              <option>Kalinga</option>
-              <option>Laguna</option>
-              <option>Lanao del Norte</option>
-              <option>Lanao del Sur</option>
-              <option>La Union</option>
-              <option>Leyte</option>
-              <option>Maguindanao</option>
-              <option>Marinduque</option>
-              <option>Masbate</option>
-              <option>Metro Manila</option>
-              <option>Mindoro Occidental</option>
-              <option>Mindoro Oriental</option>
-              <option>Misamis Occidental</option>
-              <option>Misamis Oriental</option>
-              <option>Mountain Province</option>
-              <option>Negros Occidental</option>
-              <option>Negros Oriental</option>
-              <option>North Cotabato</option>
-              <option>Northern Samar</option>
-              <option>Nueva Ecija</option>
-              <option>Nueva Vizcaya</option>
-              <option>Palawan</option>
-              <option>Pampanga</option>
-              <option>Pangasinan</option>
-              <option>Quezon</option>
-              <option>Quirino</option>
-              <option>Rizal</option>
-              <option>Romblon</option>
-              <option>Samar</option>
-              <option>Sarangani</option>
-              <option>Siquijor</option>
-              <option>Sorsogon</option>
-              <option>South Cotabato</option>
-              <option>Southern Leyte</option>
-              <option>Sultan Kudarat</option>
-              <option>Sulu</option>
-              <option>Surigao del Norte</option>
-              <option>Surigao del Sur</option>
-              <option>Tarlac</option>
-              <option>Tawi-Tawi</option>
-              <option>Zambales</option>
-              <option>Zamboanga del Norte</option>
-              <option>Zamboanga del Sur</option>
-              <option>Zamboanga Sibugay</option>
+              <option value="Abra">Abra</option>
+              <option value="Agusan del Norte">Agusan del Norte</option>
+              <option value="Agusan del Sur">Agusan del Sur</option>
+              <option value="Aklan">Aklan</option>
+              <option value="Albay">Albay</option>
+              <option value="Antique">Antique</option>
+              <option value="Apayao">Apayao</option>
+              <option value="Aurora">Aurora</option>
+              <option value="Basilan">Basilan</option>
+              <option value="Bataan">Bataan</option>
+              <option value="Batanes">Batanes</option>
+              <option value="Batangas">Batangas</option>
+              <option value="Biliran">Biliran</option>
+              <option value="Benguet">Benguet</option>
+              <option value="Bohol">Bohol</option>
+              <option value="Bukidnon">Bukidnon</option>
+              <option value="Bulacan">Bulacan</option>
+              <option value="Cagayan">Cagayan</option>
+              <option value="Camarines Norte">Camarines Norte</option>
+              <option value="Camarines Sur">Camarines Sur</option>
+              <option value="Camiguin">Camiguin</option>
+              <option value="Capiz">Capiz</option>
+              <option value="Catanduanes">Catanduanes</option>
+              <option value="Cavite">Cavite</option>
+              <option value="Cebu">Cebu</option>
+              <option value="Compostela">Compostela</option>
+              <option value="Davao del Norte">Davao del Norte</option>
+              <option value="Davao del Sur">Davao del Sur</option>
+              <option value="Davao Oriental">Davao Oriental</option>
+              <option value="Eastern Samar">Eastern Samar</option>
+              <option value="Guimaras">Guimaras</option>
+              <option value="Ifugao">Ifugao</option>
+              <option value="Ilocos Norte">Ilocos Norte</option>
+              <option value="Ilocos Sur">Ilocos Sur</option>
+              <option value="Iloilo">Iloilo</option>
+              <option value="Isabela">Isabela</option>
+              <option value="Kalinga">Kalinga</option>
+              <option value="Laguna">Laguna</option>
+              <option value="Lanao del Norte">Lanao del Norte</option>
+              <option value="Lanao del Sur">Lanao del Sur</option>
+              <option value="La Union">La Union</option>
+              <option value="Leyte">Leyte</option>
+              <option value="Maguindanao">Maguindanao</option>
+              <option value="Marinduque">Marinduque</option>
+              <option value="Masbate">Masbate</option>
+              <option value="Mindoro Occidental">Mindoro Occidental</option>
+              <option value="Mindoro Oriental">Mindoro Oriental</option>
+              <option value="Misamis Occidental">Misamis Occidental</option>
+              <option value="Misamis Oriental">Misamis Oriental</option>
+              <option value="Mountain Province">Mountain Province</option>
+              <option value="Negros Occidental">Negros Occidental</option>
+              <option value="Negros Oriental">Negros Oriental</option>
+              <option value="North Cotabato">North Cotabato</option>
+              <option value="Northern Samar">Northern Samar</option>
+              <option value="Nueva Ecija">Nueva Ecija</option>
+              <option value="Nueva Vizcaya">Nueva Vizcaya</option>
+              <option value="Palawan">Palawan</option>
+              <option value="Pampanga">Pampanga</option>
+              <option value="Pangasinan">Pangasinan</option>
+              <option value="Quezon">Quezon</option>
+              <option value="Quirino">Quirino</option>
+              <option value="Rizal">Rizal</option>
+              <option value="Romblon">Romblon</option>
+              <option value="Samar">Samar</option>
+              <option value="Sarangani">Sarangani</option>
+              <option value="Siquijor">Siquijor</option>
+              <option value="Sorsogon">Sorsogon</option>
+              <option value="South Cotabato">South Cotabato</option>
+              <option value="Southern Leyte">Southern Leyte</option>
+              <option value="Sultan Kudarat">Sultan Kudarat</option>
+              <option value="Sulu">Sulu</option>
+              <option value="Surigao del Norte">Surigao del Norte</option>
+              <option value="Surigao del Sur">Surigao del Sur</option>
+              <option value="Tarlac">Tarlac</option>
+              <option value="Tawi-Tawi">Tawi-Tawi</option>
+              <option value="Zambales">Zambales</option>
+              <option value="Zamboanga del Norte">Zamboanga del Norte</option>
+              <option value="Zamboanga del Sur">Zamboanga del Sur</option>
+              <option value="Zamboanga Sibugay">Zamboanga Sibugay</option>
             </select>
           </div>
           <div className="col-md-2">
@@ -242,7 +257,11 @@ function Apply() {
             />
           </div>
           <div className="col-md-6">
-            <label htmlFor="inputBirthDate" className="form-label fw-bold" required>
+            <label
+              htmlFor="inputBirthDate"
+              className="form-label fw-bold"
+              required
+            >
               Birthdate
             </label>
             <input
@@ -264,8 +283,8 @@ function Apply() {
               onChange={(e) => setSex(e.target.value)}
             >
               <option selected>Choose...</option>
-              <option>Male</option>
-              <option>Female</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
             </select>
           </div>
           <div>

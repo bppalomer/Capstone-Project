@@ -14,10 +14,9 @@ return new class extends Migration
         Schema::create('recruiters', function (Blueprint $table) {
             $table->id();
             $table->string('teamname');
-            $table->string('companyaddress');
+            $table->string('address');
             $table->string('email')->unique();
-            $table->string('gamename');
-            $table->string('jobdescription');
+            $table->string('representativename');
             $table->string('password');
             $table->timestamps();
         });

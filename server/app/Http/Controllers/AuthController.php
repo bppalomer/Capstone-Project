@@ -33,10 +33,9 @@ class AuthController extends Controller
     public function recruiters(Request $request) {
         $user = new Recruiter();
         $user->teamname = $request->teamname;
-        $user->companyaddress = $request->companyaddress;
+        $user->address = $request->address;
         $user->email = $request->email;
-        $user->gamename = $request->gamename;
-        $user->jobdescription = $request->jobdescription;
+        $user->representativename = $request->representativename;
         $user->password = Hash::make($request->password);
         $user->save();
 
