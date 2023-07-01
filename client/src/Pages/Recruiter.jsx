@@ -26,6 +26,9 @@ function Recruiter() {
                 <textarea id="job" type="text"/>
             </div>
             </div>
+            <div class="d-flex justify-content-center mt-4">
+            <button class="btn btn-primary">Submit</button>
+        </div>
         </form>
         </>
     )

@@ -12,7 +12,7 @@ function Login() {
                     <input type="email" className="form-control" id="inputPassword2" placeholder="email"/>
                     </div>
                     <div className="m-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label text-light">Password</label>
+                    <label htmlFor="exampleInputPassword1" className="form-label text-light" placeholder="Password">Password</label>
                     <input type="password" className="form-control" id="exampleInputPassword1" />
                     </div>
                     <div>
