@@ -271,3 +271,18 @@ button:hover {
     margin-left: 0px;
   }
 }
+
+/* recruiter page */
+
+.recruiter-profile{
+  max-width: 50vw;
+}
+
+.card-img{
+  max-width: fit-content;
+}
+
+#recruiter-form{
+  width: 50vw;
+}
+
