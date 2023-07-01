@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Apply() {
+function UserRegistrationForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -327,4 +327,4 @@ function Apply() {
   );
 }
 
-export default Apply;
+export default UserRegistrationForm;
