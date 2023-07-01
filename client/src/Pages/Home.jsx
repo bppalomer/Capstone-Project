@@ -17,7 +17,7 @@ function Home() {
                             Rise above the rest, unleash your greatness! Become who you dream to be.
                         </p>
                         <br />
-                        <button className="btn p-3 fw-bold text-align-middle">GET STARTED</button>
+                        <button className="btn p-3 fw-bold">GET STARTED</button>
                     </p>
                 </div>
             </section>
@@ -34,7 +34,30 @@ function Home() {
                         with top teams, and embark on an exciting journey to success.
                     </h1>
                     <br />
+                    <button className="btn p-3 fw-bold text-align-middle">BE A PRO</button>
+                    <button className="btn p-3 fw-bold text-align-middle">HIRE A PRO</button>
                 </p>
+            </section>
+
+            <section id="howItWorks" className="container-fluid p-5">
+                <div className="container p-5 mx-auto text-center">
+                    <h1 className="fw-bold display-4 text-white">How it works?</h1>
+                </div>
+               
+                    <div className="card-container mx-auto">
+                        <div id="steps" className="card">
+                            <div className="front-content">
+                                <p>SIGN UP</p>
+                            </div>
+                            <div className="content">
+                                <p className="heading">Card Hover</p>
+                                <p>
+                                    asd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+               
             </section>
         </>
     )
