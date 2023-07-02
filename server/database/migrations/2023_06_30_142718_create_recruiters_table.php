@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('recruiters', function (Blueprint $table) {
             $table->id();
-            $table->string('teamname');
-            $table->string('address');
-            $table->string('email')->unique();
-            $table->string('representativename');
+            $table->string('firstname');
+            $table->string('lastname');
+            $table->string('username')->unique();
+            $table->string('email')->unique();            
             $table->string('password');
             $table->timestamps();
         });

@@ -223,3 +223,8 @@ button:hover {
   color: rgb(255, 255, 255) !important;
 }
 
+/* Registration Page */
+
+.registration_radio {
+  padding: 1vw 32vw;
+}
