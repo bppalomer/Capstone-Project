@@ -12,7 +12,16 @@ function Apply() {
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://127.0.0.1:8000/api/users", {
+    let url = "http://127.0.0.1:8000/api/users";
+
+    const userTypeRadio = document.querySelector(
+      'input[name="userType"]:checked'
+    );
+    if (userTypeRadio && userTypeRadio.value === "recruiters") {
+      url = "http://127.0.0.1:8000/api/recruiters";
+    }
+
+    const response = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +39,7 @@ function Apply() {
     console.log(data);
   };
   return (
-    <div className="justify-content-center d-flex mt-4">
+    <div className="justify-content-center d-flex m-4">
       <form
         className="recruiter container text-light m-5 p-5 rounded border border-light"
         onSubmit={handleRegister}
@@ -38,33 +47,39 @@ function Apply() {
         <div className="text-center">
           <h1>Registration Form</h1>
         </div>
-        <div className="d-flex justify-content-around mb-3 mt-5">
-          <div className="form-check border border-light">
-            <input
-              className="form-check-input"
-              type="radio"
-              name="userType"
-              id="candidateRadio"
-              value="candidate"
-            />
-            <label className="form-check-label" htmlFor="candidateRadio">
-              Candidate
-            </label>
+        <p className="mt-4">Account Type</p>
+        <div className="row g-1 mb-3 mt-2">
+          <div className="col-md-6 form-check border border-light rounded registration_radio">
+            <div className="ms-3">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="userType"
+                id="userRadio"
+                value="user"
+              />
+              <label className="form-check-label" htmlFor="userRadio">
+                User
+              </label>
+            </div>
           </div>
-          <div className="form-check border border-light">
-            <input
-              className="form-check-input"
-              type="radio"
-              name="userType"
-              id="companyRadio"
-              value="company"
-            />
-            <label className="form-check-label" htmlFor="companyRadio">
-              Company
-            </label>
+          <div className="col-md-6 form-check border border-light rounded registration_radio">
+            <div className="ms-3">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="userType"
+                id="recruitersRadio"
+                value="recruiters"
+              />
+              <label className="form-check-label" htmlFor="recruitersRadio">
+                Recruiter
+              </label>
+            </div>
           </div>
         </div>
-        <div className="mb-3">
+        <div className="row">
+        <div className="col-md-6 mb-3">
           <label htmlFor="firstNameInput" className="form-label">
             First Name
           </label>
@@ -76,19 +91,7 @@ function Apply() {
             onChange={(e) => setFirstName(e.target.value)}
           />
         </div>
-        <div className="mb-3">
-          <label htmlFor="firstNameInput" className="form-label">
-            First Name
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="firstNameInput"
-            value={firstname}
-            onChange={(e) => setFirstName(e.target.value)}
-          />
-        </div>
-        <div className="mb-3">
+        <div className="col-md-6 mb-3">
           <label htmlFor="lastNameInput" className="form-label">
             Last Name
           </label>
@@ -100,6 +103,9 @@ function Apply() {
             onChange={(e) => setLastName(e.target.value)}
           />
         </div>
+        </div>
+        
+        
         <div className="mb-3">
           <label htmlFor="usernameInput" className="form-label">
             Username
