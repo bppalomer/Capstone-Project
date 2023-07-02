@@ -12,10 +12,10 @@ function User() {
       <div className="container m-5">
         <div className="justify-content-end d-flex">
           <nav aria-label="breadcrumb">
-            <ol className="breadcrumb">
+            <ol className="breadcrumb text-light">
               <li
                 className={`breadcrumb-item ${
-                  currentPage === "dashboard" ? "active" : ""
+                  currentPage === "dashboard" ? "active text-white fw-bold" : ""
                 }`}
               >
                 {currentPage === "dashboard" ? (
@@ -26,22 +26,10 @@ function User() {
                   </a>
                 )}
               </li>
+
               <li
                 className={`breadcrumb-item ${
-                  currentPage === "profile" ? "active" : ""
-                }`}
-              >
-                {currentPage === "profile" ? (
-                  <span>Profile</span>
-                ) : (
-                  <a href="#" onClick={() => handlePageChange("profile")}>
-                    Profile
-                  </a>
-                )}
-              </li>
-              <li
-                className={`breadcrumb-item ${
-                  currentPage === "settings" ? "active" : ""
+                  currentPage === "settings" ? "active text-white fw-bold" : ""
                 }`}
               >
                 {currentPage === "settings" ? (
@@ -70,22 +58,21 @@ function User() {
                   hours and have consistent availability for team practices and
                   competitive matches.
                 </p>
+                <div className="justify-content-end d-flex">
+                <button type="button" className="btn fw-bold ps-5 pe-5 m-0">Apply</button>
+                </div>
+                
               </div>
             </div>
           )}
-          {currentPage === "profile" && (
-            <div>
-              <h3 className="fw-bold">Profile</h3>
-              {/* Profile content */}
-            </div>
-          )}
+
           {currentPage === "settings" && (
             <div>
                 <h3 className="fw-bold">Settings</h3>
               <form className="m-5 p-5 border border-light rounded" action="">
                 
                 <div className="m-4">
-                  <h4>Username</h4>
+                  <h4>Username: test</h4>
                 </div>
                 <div className="m-4">
                   <label for="passwordInput" class="form-label">
@@ -106,7 +93,7 @@ function User() {
                     type="password"
                     class="form-control"
                     id="newPasswordInput"
-                    placeholder="Current Password"
+                    placeholder="New Password"
                   />
                 </div>
                 <div className="m-4">
@@ -117,7 +104,7 @@ function User() {
                     type="password"
                     class="form-control"
                     id="rePasswordInput"
-                    placeholder="Current Password"
+                    placeholder="Re-Type Password"
                   />
                 </div>
                 <div className="justify-content-center d-flex">
