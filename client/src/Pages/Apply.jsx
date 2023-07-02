@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Apply() {
   const [firstname, setFirstName] = useState("");
@@ -8,35 +7,60 @@ function Apply() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [repassword, setRepassword] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [registrationSuccess, setRegistrationSuccess] = useState(false);
+
+  useEffect(() => {
+    if (passwordError) {
+      const timeout = setTimeout(() => {
+        setPasswordError("");
+      }, 3000);
+
+      return () => clearTimeout(timeout);
+    }
+
+    if (registrationSuccess) {
+      const timeout = setTimeout(() => {
+        window.location.href = "/Login";
+      }, 3000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [passwordError, registrationSuccess]);
 
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    let url = "http://127.0.0.1:8000/api/users";
+    if (password === repassword) {
+      let url = "http://127.0.0.1:8000/api/users";
 
-    const userTypeRadio = document.querySelector(
-      'input[name="userType"]:checked'
-    );
-    if (userTypeRadio && userTypeRadio.value === "recruiters") {
-      url = "http://127.0.0.1:8000/api/recruiters";
+      const userTypeRadio = document.querySelector(
+        'input[name="userType"]:checked'
+      );
+      if (userTypeRadio && userTypeRadio.value === "recruiters") {
+        url = "http://127.0.0.1:8000/api/recruiters";
+      }
+
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstname,
+          lastname,
+          username,
+          email,
+          password,
+        }),
+      });
+
+      const data = await response.json();
+      console.log(data);
+      setRegistrationSuccess(true);
+    } else {
+      setPasswordError("Passwords do not match");
     }
-
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        firstname,
-        lastname,
-        username,
-        email,
-        password,
-      }),
-    });
-
-    const data = await response.json();
-    console.log(data);
   };
   return (
     <div className="justify-content-center d-flex m-4">
@@ -59,7 +83,7 @@ function Apply() {
                 value="user"
               />
               <label className="form-check-label" htmlFor="userRadio">
-                User
+                Candidate
               </label>
             </div>
           </div>
@@ -73,7 +97,7 @@ function Apply() {
                 value="recruiters"
               />
               <label className="form-check-label" htmlFor="recruitersRadio">
-                Recruiter
+                Company
               </label>
             </div>
           </div>
@@ -161,6 +185,15 @@ function Apply() {
             />
           </div>
         </div>
+        {passwordError && (
+          <div className="alert alert-danger">{passwordError}</div>
+        )}
+        {registrationSuccess && (
+          <div className="alert alert-success">
+            The account is successfully registered. Redirecting to the log in
+            page...
+          </div>
+        )}
         <div className="justify-content-center d-flex mt-3">
           <button type="submit" className="btn btn-lg">
             Submit
