@@ -49,34 +49,38 @@ class AuthController extends Controller
         return response()->json(['message' => 'Recruiter Registered Successfully']);
     }
 
-    public function login(Request $request) {
-        $credentials = $request->validate([
-            'email' => 'required|email',
-            'password' => 'required',
-        ]);
-    
-        $userType = $request->input('userType');
-    
-        if ($userType === 'user') {
-            $user = User::where('email', $credentials['email'])->first();
-    
-            if ($user && Hash::check($credentials['password'], $user->password)) {
-                // User authentication successful
-                $token = $user->createToken('auth_token')->plainTextToken;
-                return response()->json(['token' => $token, 'userType' => 'user']);
-            }
-        } elseif ($userType === 'recruiter') {
-            $recruiter = Recruiter::where('email', $credentials['email'])->first();
-    
-            if ($recruiter && Hash::check($credentials['password'], $recruiter->password)) {
-                // Recruiter authentication successful
-                $token = $recruiter->createToken('auth_token')->plainTextToken;
-                return response()->json(['token' => $token, 'userType' => 'recruiter']);
-            }
+    public function login(Request $request)
+{
+    $credentials = $request->validate([
+        'email' => 'required|email',
+        'password' => 'required',
+    ]);
+
+    $userType = $request->input('userType');
+
+    if ($userType === 'user') {
+        $user = User::where('email', $credentials['email'])->first();
+
+        if ($user && Hash::check($credentials['password'], $user->password)) {
+            // User authentication successful
+            $token = $user->createToken('auth_token')->plainTextToken;
+            return response()->json(['token' => $token, 'userType' => 'user']);
         }
-    
-        // Login failed or user type not found
-        return response()->json(['message' => 'Invalid log in']);
+    } elseif ($userType === 'recruiter') {
+        $recruiter = Recruiter::where('email', $credentials['email'])->first();
+
+        if ($recruiter && Hash::check($credentials['password'], $recruiter->password)) {
+            // Recruiter authentication successful
+            $token = $recruiter->createToken('auth_token')->plainTextToken;
+            return response()->json(['token' => $token, 'userType' => 'recruiter']);
+        }
     }
+
+    // Login failed or user type not found
+    return response()->json(['message' => 'Invalid login'], 401);
+}
+
+    
+
     
 }

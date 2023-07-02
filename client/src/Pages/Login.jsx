@@ -7,7 +7,7 @@ function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
+  
     try {
       const response = await fetch('http://127.0.0.1:8000/api/login', {
         method: 'POST',
@@ -20,14 +20,18 @@ function Login() {
           userType, // Include the selected user type in the request body
         }),
       });
-
+  
       const data = await response.json();
       localStorage.setItem('token', data.token);
-
-      if (userType === 'user') {
-        window.location.href = "/User";
-      } else if (userType === 'recruiter') {
-        window.location.href = "/Recruiter";
+  
+      if (response.ok) { // Check if the response status is in the 200-299 range
+        if (data.userType === 'user') {
+          window.location.href = "/User";
+        } else if (data.userType === 'recruiter') {
+          window.location.href = "/Recruiter";
+        }
+      } else {
+        alert('Invalid login'); // Show an alert if the response status is not in the 200-299 range
       }
     } catch (error) {
       console.error('Login Error:', error);
