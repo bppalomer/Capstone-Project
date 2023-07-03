@@ -68,15 +68,9 @@ footer {
   overflow: hidden;
   width: auto;
   height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: start;
 }
 
-#wrapper {
-  float: left;
-  width: 800px;
-}
+
 
 #divider {
   background-image: url("/divider.png");
@@ -106,12 +100,16 @@ footer {
 }
 
 .marquee {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .marquee-content {
+  flex-shrink: 0;
   display: flex;
-  animation: scrolling 10s linear infinite !important;
+  justify-content: space-between;
+  gap: 2rem;
+  min-width: 100%;
+  animation: scrolling 15s linear infinite !important;
 }
 
 .marquee-item {
@@ -294,4 +292,10 @@ button:hover {
 
 .about_logo {
   color: rgb(255, 255, 255) !important;
+}
+
+/* Registration Page */
+
+.registration_radio {
+  padding: 1vw 32vw;
 }

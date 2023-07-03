@@ -8,21 +8,28 @@ function Home() {
     return (
         <>
             <section id="hero-section" className="container-fluid">
-                <div className="container">
-                    <p id="wrapper" className="container">
-                        <h1 className="fw-bold ps-3 display-3 text-white text-start">
-                            Curve - Pro Gaming Recruitment Platform
-                        </h1>
-                        <p className="fw-semibold ps-3 display-6 text-white">
-                            Rise above the rest, unleash your greatness! Become who you dream to be.
-                        </p>
+                <div className="container ps-0 p-5 mt-5">
+                    <div className="row">
+                        <div className="col-md-7 my-auto mt-5 pt-5">
+                            <h1 className="fw-bold ps-3 display-3 text-white text-start">
+                                Curve - Pro Gaming Recruitment Platform
+                            </h1>
+                            <p className="fw-semibold ps-3 display-6 text-white">
+                                Rise above the rest, unleash your greatness! Become who you dream to be.
+                            </p>
+                            <button className="p-3 ms-3">Get Started</button>
+                        </div>
+                    </div>
+                    {/* <div id="wrapper" className="container">
+                        
                         <br />
                         <br />
-                        <button className="p-3 ms-3">Get Started</button>
-                    </p>
+                        
+                    </div> */}
                 </div>
                 
             </section>
+            
 
             <div id="divider"></div>
 
@@ -81,7 +88,44 @@ function Home() {
                                     <div className="marquee-item">
                                         <img src="/WR-m9.png" alt="Wild Rift" />
                                     </div>
+                                </div>
 
+                                <div className="marquee-content mb-5 pb-5" aria-hidden="true">
+                                    <div className="marquee-item">
+                                        <img src="/valorant-m1.png" alt="valorant" />
+                                    </div>
+
+                                    <div className="marquee-item">
+                                        <img src="/LoL-m2.png" alt="LoL" />
+                                    </div>
+
+                                    <div className="marquee-item">
+                                        <img src="/Dota2-m3.png" alt="Dota2" />
+                                    </div>
+
+                                    <div className="marquee-item">
+                                        <img src="/CsGo-m4.png" alt="CsGo" />
+                                    </div>
+
+                                    <div className="marquee-item">
+                                        <img src="/COD-m5.png" alt="COD warzone" />
+                                    </div>
+
+                                    <div className="marquee-item">
+                                        <img src="/ML-m6.png" alt="Mobile Legends" />
+                                    </div>
+
+                                    <div className="marquee-item">
+                                        <img src="/Fortnite-m7.png" alt="Fortnite" />
+                                    </div>
+
+                                    <div className="marquee-item">
+                                        <img src="/Pubg-m8.png" alt="PubG" />
+                                    </div>
+
+                                    <div className="marquee-item">
+                                        <img src="/WR-m9.png" alt="Wild Rift" />
+                                    </div>
                                 </div>
                             </div>
                         </div>

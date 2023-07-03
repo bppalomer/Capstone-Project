@@ -15,15 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('firstname');
             $table->string('lastname');
-            $table->string('email')->unique();
-            $table->string('address');
-            $table->string('province');
-            $table->string('city');
-            $table->string('zip');
-            $table->date('birthdate');
-            $table->string('sex');
-            $table->string('gamename');
-            $table->string('bio');
+            $table->string('username')->unique();
+            $table->string('email')->unique();            
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

@@ -16,10 +16,10 @@ class Recruiter extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'teamname',
-        'address',
+        'firstname',
+        'lastname',
         'email',
-        'representativename',
+        'username',
         'password',
     ];
 
