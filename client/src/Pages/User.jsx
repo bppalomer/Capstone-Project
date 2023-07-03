@@ -75,34 +75,34 @@ function User() {
                   <h4>Username: test</h4>
                 </div>
                 <div className="m-4">
-                  <label for="passwordInput" class="form-label">
+                  <label forHtml="passwordInput" className="form-label">
                     Password
                   </label>
                   <input
                     type="password"
-                    class="form-control"
+                    className="form-control"
                     id="passwordInput"
                     placeholder="Current Password"
                   />
                 </div>
                 <div className="m-4">
-                  <label for="newPasswordInput" class="form-label">
+                  <label forHtml="newPasswordInput" className="form-label">
                     New Password
                   </label>
                   <input
                     type="password"
-                    class="form-control"
+                    className="form-control"
                     id="newPasswordInput"
                     placeholder="New Password"
                   />
                 </div>
                 <div className="m-4">
-                  <label for="rePasswordInput" class="form-label">
+                  <label forHtml="rePasswordInput" className="form-label">
                     Confirm Password
                   </label>
                   <input
                     type="password"
-                    class="form-control"
+                    className="form-control"
                     id="rePasswordInput"
                     placeholder="Re-Type Password"
                   />

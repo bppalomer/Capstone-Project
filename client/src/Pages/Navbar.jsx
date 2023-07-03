@@ -76,9 +76,6 @@ const Navbar = () => {
                   find.pathname === "/Login" ? `fw-bold active` : ``
                 }`}
               >
-                <button className="navbar-btn ps-4 pe-4 pt-2 pb-2 me-3 rounded" type="submit">
-                  Log-In
-                </button>
               </Link>
               <Link
                 to="/Apply"
@@ -86,8 +83,11 @@ const Navbar = () => {
                   find.pathname === "/Apply" ? `fw-bold active` : ``
                 }`}
               >
-                <button className="navbar-btn ps-3 pe-3 pt-2 pb-2 rounded" type="submit">
-                  Register
+                <button className="navbar-btn ps-3 pe-3 pt-2 pb-2" type="submit">
+                  <span>Register</span>
+                </button>
+                <button className="navbar-btn ms-2 ps-4 pe-4 pt-2 pb-2 me-3" type="submit">
+                  <span>Log-In</span>
                 </button>
               </Link>
             </div>
