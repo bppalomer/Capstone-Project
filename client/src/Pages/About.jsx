@@ -8,11 +8,31 @@ const About = () => {
         <h4 className="text-white">COVER ALL ESPORTS & GAMER NEEDS</h4>
       </div>
     </section>
+
+      <div className="container p-5">
+        <h1 className="text-white text-center">Welcome to Curve!</h1>
+        <div className="text-light m-5 p-5 border border-primary-subtle">
+          <h1>Mission</h1>
+          <p>To empower gamers and recruiters by providing a platform that seamlessly connects them, enabling the creation of highly skilled and successful gaming teams.</p>
+        </div>
+        <div className="text-light m-5 p-5 border border-primary-subtle">
+          <h1>Vision</h1>
+          <p>To be the leading platform that revolutionizes the way gamers and recruiters come
+            together, fostering a dynamic and inclusive gaming community that drives excellence
+            and innovation in esports and gaming talent recruitment.
+
+            By connecting gamers and recruiters, Curve aims to bridge the gap and facilitate
+            the formation of gaming teams that are not only skilled but also aligned in their
+            goals and aspirations. This mission and vision statement highlights the company's
+            commitment to enabling collaboration, nurturing talent, and driving the growth and
+            advancement of the gaming industry.</p>
+        </div>
+      </div>
       <div className="text-light text-center m-5">
         <h1>Meet the Developers</h1>
       </div>
 
-      <div className="row justify-content-center mt-5 ">
+      <div className="row justify-content-center mt-3 mb-5">
         <div className="card col-md-3 about_card justify-content-center d-flex align-items-center m-1 shadow-lg">
           <img
             className="card-img-top about_img_card m-2 border-light rounded-circle"
@@ -39,7 +59,7 @@ const About = () => {
         <div className="card col-md-3 about_card justify-content-center d-flex align-items-center m-1 shadow-lg">
           <img
             className="card-img-top about_img_card m-2 border-light rounded-circle"
-            src="/bryan.png"
+            src="/elie.png"
             alt="Card image cap"
           />
           <div className="card-body text-center">
@@ -62,7 +82,7 @@ const About = () => {
         <div className="card col-md-3 about_card justify-content-center d-flex align-items-center m-1 shadow-lg">
           <img
             className="card-img-top about_img_card m-2 border-light rounded-circle"
-            src="/bryan.png"
+            src="/patrick2.png"
             alt="Card image cap"
           />
           <div className="card-body text-center">
@@ -85,7 +105,7 @@ const About = () => {
         <div className="card col-md-3 about_card justify-content-center d-flex align-items-center m-1 shadow-lg">
           <img
             className="card-img-top about_img_card m-2 border-light rounded-circle"
-            src="/bryan.png"
+            src="/marj.png"
             alt="Card image cap"
           />
           <div className="card-body text-center">
@@ -105,24 +125,6 @@ const About = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className="m-3 p-5">
-      <div className="text-light m-5 p-5 border border-primary-subtle">
-        <h1>Mission</h1>
-        <p>To empower gamers and recruiters by providing a platform that seamlessly connects them, enabling the creation of highly skilled and successful gaming teams.</p>
-      </div>
-      <div className="text-light m-5 p-5 border border-primary-subtle">
-        <h1>Vision</h1>
-        <p>To be the leading platform that revolutionizes the way gamers and recruiters come
-          together, fostering a dynamic and inclusive gaming community that drives excellence
-          and innovation in esports and gaming talent recruitment.
-
-          By connecting gamers and recruiters, Curve aims to bridge the gap and facilitate 
-          the formation of gaming teams that are not only skilled but also aligned in their 
-          goals and aspirations. This mission and vision statement highlights the company's 
-          commitment to enabling collaboration, nurturing talent, and driving the growth and 
-          advancement of the gaming industry.</p>
-      </div>
       </div>
       
     </>
