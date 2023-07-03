@@ -89,44 +89,6 @@ function Home() {
                                         <img src="/WR-m9.png" alt="Wild Rift" />
                                     </div>
                                 </div>
-
-                                <div className="marquee-content mb-5 pb-5" aria-hidden="true">
-                                    <div className="marquee-item">
-                                        <img src="/valorant-m1.png" alt="valorant" />
-                                    </div>
-
-                                    <div className="marquee-item">
-                                        <img src="/LoL-m2.png" alt="LoL" />
-                                    </div>
-
-                                    <div className="marquee-item">
-                                        <img src="/Dota2-m3.png" alt="Dota2" />
-                                    </div>
-
-                                    <div className="marquee-item">
-                                        <img src="/CsGo-m4.png" alt="CsGo" />
-                                    </div>
-
-                                    <div className="marquee-item">
-                                        <img src="/COD-m5.png" alt="COD warzone" />
-                                    </div>
-
-                                    <div className="marquee-item">
-                                        <img src="/ML-m6.png" alt="Mobile Legends" />
-                                    </div>
-
-                                    <div className="marquee-item">
-                                        <img src="/Fortnite-m7.png" alt="Fortnite" />
-                                    </div>
-
-                                    <div className="marquee-item">
-                                        <img src="/Pubg-m8.png" alt="PubG" />
-                                    </div>
-
-                                    <div className="marquee-item">
-                                        <img src="/WR-m9.png" alt="Wild Rift" />
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
