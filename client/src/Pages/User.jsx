@@ -1,11 +1,20 @@
-/* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 
 function User() {
   const [currentPage, setCurrentPage] = useState("dashboard");
+  const [username, setUsername] = useState('Test');
 
-  const handlePageChange = (page) => {
+  const handlePageChange = async (page) => {
     setCurrentPage(page);
+  
+    if (page === "dashboard") {
+      try {
+        const response = await axios.get("http://127.0.0.1:8000/users");
+        setUsername(response.data.username);
+      } catch (error) {
+        console.error(error);
+      }
+    }
   };
 
   return (
@@ -48,7 +57,7 @@ function User() {
         <div className="ms-5 me-5 mb-5 p-5">
           {currentPage === "dashboard" && (
             <div>
-              <h3 className="fw-bold">Welcome, username</h3>
+              <h3 className="fw-bold">Welcome, {username}</h3>
               <div className="m-5 p-5 border border-light rounded">
                 <h3 className="fw-bold">Looking for Sentinel Players</h3>{" "}
                 {/* Subject of the post */}
