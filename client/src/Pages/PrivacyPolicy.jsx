@@ -1,7 +1,10 @@
+import React from 'react';
+
 function PrivacyPolicy() {
   return (
     <>
-      <div className="container">
+      <div className="container_pp container mt-4">
+        <p className='text-center fw-bold'>Privacy Policy</p>
         <p>
           This Privacy Policy explains how we collect, use, disclose, and
           safeguard your personal information when you use our game recruitment
@@ -122,5 +125,7 @@ function PrivacyPolicy() {
         </p>
       </div>
     </>
-  );
+  )
 }
+
+export default PrivacyPolicy;

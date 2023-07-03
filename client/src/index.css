@@ -228,3 +228,13 @@ button:hover {
 .registration_radio {
   padding: 1vw 32vw;
 }
+
+/* FAQs Page*/
+.container_FAQs{
+  color: white;
+}
+
+/* Privacy Policy Page */
+.container_pp{
+  color: white;
+}

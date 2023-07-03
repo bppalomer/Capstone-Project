@@ -7,7 +7,10 @@ import Apply from './Apply'
 import ContactUs from './ContactUs'
 import User from './User'
 import Recruiter from './Recruiter'
+import FAQs from "./FAQs"
+import PrivacyPolicy from "./PrivacyPolicy"
 import NotFound from './NotFound'
+
 
 
 
@@ -24,6 +27,8 @@ function Index() {
                     <Route path="/ContactUs" element={<ContactUs />} />
                     <Route path="/User" element={<User />} />
                     <Route path="/Recruiter" element={<Recruiter />} />
+                    <Route path="/FAQs" element={<FAQs />} />
+                    <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
                     <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>

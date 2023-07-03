@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Footer() {
   return (
     <>
@@ -32,14 +34,25 @@ function Footer() {
                 </a>
               </p>
               <p>
-                <a href="#">
-                  <small>FAQs</small>
-                </a>
+              <Link
+                    to="/FAQs"
+                    className={`nav-link ${
+                      find.pathname === "/FAQs" ? `fw-bold active` : ``
+                    }`}
+                  >
+                    FAQs
+                  </Link>
+                
               </p>
               <p>
-                <a href="#">
-                  <small>Privacy Policy</small>
-                </a>
+              <Link
+                    to="/PrivacyPolicy"
+                    className={`nav-link ${
+                      find.pathname === "/PrivacyPolicy" ? `fw-bold active` : ``
+                    }`}
+                  >
+                    Privacy Policy
+                  </Link>
               </p>
             </div>
           </div>
