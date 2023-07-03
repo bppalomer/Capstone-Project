@@ -35,20 +35,20 @@ function Home() {
 
             <section id="intro-section" className="container-fluid">
                 <p className="container p-5 pb-0">
-                    <h1 id="intro-text" className="fw-semibold text-center text-white text-start m-5 p-5">
-                        <span className="fw-bold display-1">Level up your gaming career with Curve!</span>
+                    <h2 id="intro-text" className="fw-semibold text-center text-white text-start m-5 p-5">
+                        <span className="fw-bold display-3">Level up your gaming career with Curve!</span>
                         <br />
                         Join a community of elite players and professional teams, and unleash
                         your potential in the world of competitive gaming. Get scouted, connect
                         with top teams, and embark on an exciting journey to success.
-                    </h1>
+                    </h2>
                     <div className="mt-4">
                         <button className="p-3 fw-bold text-align-middle m-2 mt-0">BE A PRO</button>
                         <button className="p-3 fw-bold text-align-middle m-2 mt-0">HIRE A PRO</button>
                     </div>
                 </p>
                 <div className="container">
-                    <h1 className="fw-bold display-2 text-white text-start mt-5 pt-5">Popular Top Games</h1>
+                    <h1 className="fw-bold display-4 text-white text-start mt-5 pt-5">Popular Top Games</h1>
                     <div className="container p-5">
                         <div className="row mb-5 pb-5">
                             <div className="marquee mb-5 pb-5">

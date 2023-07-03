@@ -14,9 +14,44 @@ body {
 }
 
 
+/* loader */
+
+.loader {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 45%;
+  left: 45%;
+  display: inline-block;
+  border: 5px solid rgb(255, 17, 0);
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: rot5 3s infinite;
+}
+
+@keyframes rot5 {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+    border-top-color: rgb(139, 46, 46);
+    border-bottom-color: rgb(243, 92, 33);
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 /* footer */
-
-
 
 footer {
   background-color: #0c0d0eaf;
@@ -181,6 +216,7 @@ footer {
 
 
 /* Navbar Section */
+
 .logo {
   height: 50px;
   width: 100%;
@@ -241,6 +277,10 @@ button:hover {
   margin: 0 10px;
 }
 
+.navbar-nav .nav-item:hover {
+  color: #E4504E !important;
+}
+
 .navbar-right {
   margin-left: auto;
 }
@@ -272,7 +312,6 @@ button:hover {
 
 #about-wrapper {
   text-align: start;
-
 }
 
 .about_btn {
@@ -298,4 +337,11 @@ button:hover {
 
 .registration_radio {
   padding: 1vw 32vw;
+}
+
+/* Contact Us */
+
+#msg {
+  width: 500px;
+  height: 200px;
 }
