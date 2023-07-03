@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <footer className="container-fluid mx-auto mt-5 p-5 text-white">
+      <footer className="container-fluid mx-auto pt-5 p-5 text-white">
         <div className="row">
           <div className="col-md-3">
             <h1 className="text-start"><img className="logo-footer" src="/curve-logo.png" alt="logo" /></h1>
@@ -65,7 +65,7 @@ function Footer() {
                 placeholder="Email Address.."
                 className="mt-3 form-control"
               ></input>
-              <button className="btn btn-primary fw-bold mt-3 ms-0">Subscribe Now</button>
+              <button className="p-3 fw-bold mt-3 ms-0">Subscribe Now</button>
               <p className="mt-3">
                 <small>
                   Get the latest update and offer for business service yearly
