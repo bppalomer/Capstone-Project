@@ -84,10 +84,10 @@ const Navbar = () => {
                 }`}
               >
                 <button className="navbar-btn ps-3 pe-3 pt-2 pb-2" type="submit">
-                  Register
+                  <span>Register</span>
                 </button>
                 <button className="navbar-btn ms-2 ps-4 pe-4 pt-2 pb-2 me-3" type="submit">
-                  Log-In
+                  <span>Log-In</span>
                 </button>
               </Link>
             </div>

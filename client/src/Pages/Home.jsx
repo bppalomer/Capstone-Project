@@ -53,7 +53,7 @@ function Home() {
                         <div className="row mb-5 pb-5">
                             <div className="marquee mb-5 pb-5">
                                 <div className="marquee-content mb-5 pb-5">
-                                    <div className="marquee-item">
+                                    <div className="marquee-item" aria-hidden="true">
                                         <img src="/valorant-m1.png" alt="valorant" />
                                     </div>
                                     
