@@ -339,9 +339,50 @@ button:hover {
   padding: 1vw 32vw;
 }
 
-/* Contact Us */
+/* contactus page */
 
-#msg {
-  width: 500px;
-  height: 200px;
+#contactform {
+  width: 50vw;
+}
+
+#input {
+  height: 4vw;
+}
+
+#Message {
+  height: 9vw;
+}
+
+.header-text {
+  font-size: 60px;
+  text-decoration: none;
+}
+
+.contactUs {
+  margin: 50px;
+  margin-left: 100px;
+}
+
+.fab {
+  width: 30px;
+  height: 30px;
+}
+
+.info-box {
+  margin-top: 18vw;
+}
+
+@media (max-width: 800px) {
+  #contactform {
+    width: 40vw;
+  }
+
+  .header-text {
+    font-size: 30px;
+  }
+
+  .contactUs {
+    margin: 0px;
+    margin-left: 0px;
+  }
 }
