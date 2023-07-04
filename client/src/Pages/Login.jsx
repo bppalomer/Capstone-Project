@@ -3,7 +3,7 @@ import { useState } from 'react';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [userType, setUserType] = useState('user'); // Default user type is 'user'
+  const [userType, setUserType] = useState('user'); // This will be set the default user type which is 'user'
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ function Login() {
         body: JSON.stringify({
           email,
           password,
-          userType, // Include the selected user type in the request body
+          userType, 
         }),
       });
   
