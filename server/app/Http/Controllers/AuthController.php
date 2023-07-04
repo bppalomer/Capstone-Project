@@ -62,7 +62,7 @@ class AuthController extends Controller
         $user = User::where('email', $credentials['email'])->first();
 
         if ($user && Hash::check($credentials['password'], $user->password)) {
-            // User authentication successful
+            // This is the part where the user authentication will be successful.
             $token = $user->createToken('auth_token')->plainTextToken;
             return response()->json(['token' => $token, 'userType' => 'user']);
         }
@@ -70,13 +70,13 @@ class AuthController extends Controller
         $recruiter = Recruiter::where('email', $credentials['email'])->first();
 
         if ($recruiter && Hash::check($credentials['password'], $recruiter->password)) {
-            // Recruiter authentication successful
+            // This is the part where the recruiter authentication will be successful.
             $token = $recruiter->createToken('auth_token')->plainTextToken;
             return response()->json(['token' => $token, 'userType' => 'recruiter']);
         }
     }
 
-    // Login failed or user type not found
+    // This is the error that the user and recruiter will received if ever the log in is not successful.
     return response()->json(['message' => 'Invalid login'], 401);
 }
 
